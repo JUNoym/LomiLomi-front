@@ -1,7 +1,9 @@
-{
+// eslint-disable-next-line no-undef
+module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true
     },
     "extends": [
         "eslint:recommended",
@@ -20,5 +22,9 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"],
+        "react/prop-types": "off",
+        "no-undef": "error",
     }
-}
+};
